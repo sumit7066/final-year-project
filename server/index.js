@@ -21,7 +21,7 @@ app.use('/api/resume', resumeRoutes);
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
-    console.log('✅ Connected to MongoDB Atlas! (Running on port 5001)');
+    console.log('✅ Connected to MongoDB Atlas!');
     app.listen(PORT, () => {
       console.log(`🚀 Server running on port ${PORT}`);
     });
